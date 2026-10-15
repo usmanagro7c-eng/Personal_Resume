@@ -1,0 +1,145 @@
+\documentclass[11pt]{article}
+
+% -- Required Packages --
+\usepackage[left=0.3in,top=0.4in,right=0.3in,bottom=0.4in]{geometry}
+\usepackage{fontawesome5}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
+\usepackage{newtxtext,newtxmath}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{parskip}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{mathptmx}
+
+% -- Section Formatting --
+\titleformat{\section}[block]{\large\bfseries\rmfamily}{}{0em}{}[\titlerule]
+\setcounter{secnumdepth}{0} % Hide section numbers
+
+% -- Custom Commands --
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}} 
+\newcommand{\name}[1]{\begin{center}{\Huge \bfseries #1}\end{center}}
+\newcommand{\address}[1]{\begin{center}\small #1\end{center}\vspace{-8pt}}
+\newcommand{\rSection}[1]{\section{\uppercase{#1}}}
+
+\begin{document}
+\pagestyle{empty}
+
+\name{Muhammad Usman Aziz}
+
+\address{
+\faMapMarker*{} Faisalabad, Punjab, Pakistan \quad
+\faPhone{} (+92)3216692660 \quad
+\faEnvelope{} \href{mailto:usmanamjad495@gmail.com}{usmanamjad495@gmail.com} \quad
+\faGlobe{} \href{https://usmanamjad.vercel.app/}{Portfolio} \\ \vspace{3pt}
+\faLinkedin{} \href{https://www.linkedin.com/in/usmanamjad41/}{LinkedIn} \quad
+\faGithub{} \href{https://github.com/MaAn-41}{GitHub (Personal)} \quad
+\faGithub{} \href{https://github.com/usmanagro7c-eng}{GitHub (Engineering)}
+}
+
+%-------------------------
+\rSection{Professional Summary}
+Results-oriented AI and Full-Stack Software Engineer with 1+ years of enterprise experience developing scalable ERPNext solutions, full-stack web applications, and AI-driven workflows. Proven background in designing secure document verification systems, automated ETL migration pipelines, and modern web architectures (React, TanStack Start, Node.js). Backed by a strong Computer Science degree from FAST-NUCES and 7+ years of technical mentorship experience.
+
+%-------------------------
+\rSection{Education}
+{\bf Bachelor of Computer Science}, FAST-NUCES, CFD Campus\hfill {Sep 2021 - June 2025}
+
+\vspace{-1em}
+
+%-------------------------
+\rSection{Skills}
+\begin{tabularx}{\textwidth}{ @{} >{\bfseries}l @{\hspace{3ex}} X @{} }
+Programming Languages & Python, TypeScript, JavaScript, C++, SQL, R, HTML5/CSS3 \\
+AI \& Machine Learning & Generative AI, LLMs, RAG, Fine-Tuning (LoRA/PEFT), NLP, Deep Learning, PyTorch, TensorFlow, OpenCV, Keras, Transformers, Pandas, NumPy, Scikit-learn \\
+Full-Stack \& Web & React.js, TanStack Start, Node.js, Express.js, Frappe / ERPNext, Tailwind CSS, REST APIs, Webhooks, Dexie (IndexedDB), Cloudflare Workers \\
+Mobile Development & React Native, Capacitor, Android Studio, Expo Go \\
+Databases \& ERP & MariaDB, MySQL, MongoDB, ERPNext, Google Sheets API, QuickBooks Integration \\
+Developer Tools & Git, GitHub, VS Code, Cursor, Postman, Vite, Jupyter Notebook, Colab, PyCharm \\
+\end{tabularx}
+
+%-------------------------
+\rSection{Experience}
+
+\textbf{Software Engineer} \hfill {Oct 2025 - Present}\\
+Agrovisions \hfill \textit{Faisalabad, Punjab, Pakistan}
+ \begin{itemize}[noitemsep,topsep=2pt]
+    \item Developed and customized enterprise ERPNext modules, automating sales and invoicing workflows that reduced manual processing time by 40\% and minimized reconciliation errors.
+    \item Engineered tamper-proof cryptographic document verification with dynamic QR codes, securing 500+ commercial invoices and certificates against falsification.
+    \item Spearheaded automated ETL pipelines to extract, sanitize, and migrate 5+ years of legacy QuickBooks Desktop accounting records across 20+ transaction types into ERPNext with 100\% data fidelity.
+    \item Built and maintained full-stack web applications and REST API microservices handling live bidirectional inventory synchronization and automated webhook dispatching.
+ \end{itemize}
+
+\textbf{Computer Science \& STEM Instructor} \hfill {Aug 2019 - Present}\\
+The Century Academy of Science Commerce and Arts \hfill \textit{Faisalabad, Punjab, Pakistan}
+ \begin{itemize}[noitemsep,topsep=2pt]
+    \item Instructed and mentored 150+ high school and intermediate students across 7+ years in Computer Science, Mathematics, and Physics, achieving a 95\%+ board exam pass rate.
+    \item Coached students in fundamental data structures, algorithmic thinking, and Python programming, with multiple mentees securing admissions into top-tier university CS programs.
+ \end{itemize}
+
+\textbf{Software \& AI Internships} \hfill {July 2024 - Sep 2024}\\
+\textit{CodeAlpha \textbullet{} Oasis Infobyte \textbullet{} GrowIntern} \hfill \textit{Remote}
+ \begin{itemize}[noitemsep,topsep=2pt]
+    \item \textbf{CodeAlpha (AI Intern):} Developed an AI-powered autonomous delivery robot system in Python with dynamic obstacle pathfinding.
+    \item \textbf{Oasis Infobyte (Data Analyst Intern):} Conducted exploratory data analysis (EDA) and K-means customer segmentation on retail sales datasets.
+    \item \textbf{GrowIntern (ML Intern):} Applied machine learning algorithms to real-world datasets with hands-on model training and evaluation.
+ \end{itemize}
+
+%-------------------------
+\rSection{Projects}
+
+\faMedium{} \href{https://medium.com/@usmanamjad495}{\textbf{Medium Technical Blogs}}
+
+\href{https://github.com/MaAn-41/Deaf-Ed}{\textbf{Deaf-ED (Final Year Project)}} - (MERN, OpenCV, and LSTM)  
+\begin{itemize}[noitemsep,topsep=2pt] 
+  \item Designed an AI-powered assistive mobile app using PSL animations and computer vision (LSTM/OpenCV), achieving 90\%+ real-time sign recognition accuracy for inclusive early childhood education.
+\end{itemize}
+
+\href{https://github.com/usmanagro7c-eng/Stockly}{\textbf{Stockly}} - (TanStack Start, React, TypeScript, Tailwind CSS, Dexie, Capacitor)  
+\begin{itemize}[noitemsep,topsep=2pt] 
+  \item Developed an offline-first retail inventory and profit manager with IndexedDB persistence, sub-second query latency, and automated OAuth sync to Google Sheets for multi-device management.
+\end{itemize}
+
+\href{https://github.com/tushar-javaid/QuickBook_Desktop_Data_Extractor}{\textbf{QuickBooks Desktop Data Extractor}} - (Python, QBXML SDK, VBScript COM, Web UI)  
+\begin{itemize}[noitemsep,topsep=2pt] 
+  \item Engineered a high-throughput SDK extraction engine using QBXML and COM Bridge, exporting 20+ transaction types and master records into structured JSON with real-time Web UI configuration.
+\end{itemize}
+
+\href{https://github.com/MaAn-41}{\textbf{QuickBooks to ERPNext Migration Engine}} - (Frappe, ERPNext, Python, Pandas)  
+\begin{itemize}[noitemsep,topsep=2pt] 
+  \item Built an automated ETL data pipeline and custom Frappe application to transform, validate, and load 5+ years of QuickBooks accounting, payroll, and stock entries into ERPNext DocTypes.
+\end{itemize}
+
+\href{https://github.com/usmanagro7c-eng/ERPNext-Document-Verification}{\textbf{ERPNext Document Verification Portal}} - (ERPNext, Frappe, Python, JavaScript, QR Code)  
+\begin{itemize}[noitemsep,topsep=2pt] 
+  \item Built a cryptographic QR verification portal for ERPNext, enabling instant single-scan validation and eliminating invoice tampering risks across hundreds of commercial records.
+\end{itemize}
+
+\href{https://github.com/usmanagro7c-eng/Gemini-Web-2-API}{\textbf{Gemini Web 2 API}} - (TypeScript, Node.js, REST API)  
+\begin{itemize}[noitemsep,topsep=2pt] 
+  \item Engineered an API gateway exposing web-based Gemini AI capabilities as OpenAI-compatible REST endpoints with session management and multi-turn conversational support.
+\end{itemize}
+
+\href{https://github.com/MaAn-41/RAG-for-Diagnostic-Reasoning-for-Clinical-Notes}{\textbf{Medical AI Assistant}} - (RAG, LLMs, Vector Retrieval)  
+\begin{itemize}[noitemsep,topsep=2pt] 
+  \item Engineered an intelligent clinical RAG assistant integrating vector search and LLMs to cross-reference diagnostic medical literature and synthesize structured clinical summaries.
+\end{itemize}
+
+\href{https://github.com/usmanagro7c-eng/Oxigen-Website}{\textbf{Oxigen E-Commerce Platform}} - (React, Node.js, Express, ERPNext REST API, Tailwind CSS)  
+\begin{itemize}[noitemsep,topsep=2pt] 
+  \item Built a high-performance retail e-commerce platform and admin portal integrated with ERPNext, supporting real-time multi-warehouse stock deduction and automated sales invoicing.
+\end{itemize}
+
+\href{https://github.com/usmanagro7c-eng/Shopify-Chatbot}{\textbf{Shopify AI Assistant}} - (Node.js, Express, LLM API, Shopify Storefront API)  
+\begin{itemize}[noitemsep,topsep=2pt] 
+  \item Built an intelligent AI chatbot for Shopify storefronts handling automated 24/7 customer support, semantic product search, and live order status inquiries.
+\end{itemize}
+
+\href{https://github.com/MaAn-41/Shayar-AI}{\textbf{Shayar AI}} - (LSTM, GRU, RNN, NLP)  
+\begin{itemize}[noitemsep,topsep=2pt] 
+  \item Trained deep recurrent neural networks (LSTM/GRU) on extensive classical poetic corpora to generate metrically structured Urdu couplets with interactive lexical prompt steering.
+\end{itemize}
+
+\end{document}
